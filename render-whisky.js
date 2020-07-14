@@ -8,7 +8,7 @@ export function renderWhiskey(whiskey) {
     li.appendChild(h3);
 
     const img = document.createElement('img');
-    img.src = '../assets/' + whiskey.image;
+    img.src = './assets/' + whiskey.image;
     img.alt = whiskey.name + ' image';
     li.appendChild(img);
 
