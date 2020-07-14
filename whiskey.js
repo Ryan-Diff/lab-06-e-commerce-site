@@ -1,7 +1,7 @@
 const jameson = {
     id: 'jameson',
     name: 'Jameson Whiskey',
-    image: 'apple.png',
+    image: 'Jameson.jpg',
     description: 'Smooth with hints of vanilla.',
     category: 'Irish',
     price: 18.00,
@@ -10,16 +10,16 @@ const jameson = {
 const lagavulin = {
     id: 'lagavulin',
     name: 'Lagavulin Scotch Whiskey',
-    image: 'apple.png',
+    image: 'lagavulin-16-year-old-whisky.jpg',
     description: 'Thick and rich. Malty with a fruity sweetness. Long smokey and spicy finish.',
     category: 'Scotch',
     price:80.00,
     cost: 50.00
 };
-const rittenhouse = {
+const rittenHouse = {
     id: 'rittenhouse',
     name: 'Rittenhouse Rye Whiskey',
-    image: 'apple.png',
+    image: 'rittenhouse.jpg',
     description: 'Sweet start with a transition to dark and roasty flavors. Oak and honey finish.',
     category: 'Rye',
     price: 35.00,
@@ -28,7 +28,7 @@ const rittenhouse = {
 const angelsEnvy = {
     id: 'angels',
     name: 'Angels Envy Bourbon',
-    image: 'apple.png',
+    image: 'AngelsEnvy.jpg',
     description: 'Undertones of smoke. Vanilla, Maple Syrup, Toasted Nuts and tangerine',
     category: 'bourbon',
     price: 100.00,
@@ -37,9 +37,17 @@ const angelsEnvy = {
 const balvenie = {
     id: 'balvenie',
     name: 'Balvenie 50',
-    image: 'apple.png',
+    image: 'Balvenie.jpg',
     description: 'Citrus and oak on the nose. Warm spice and honey. Sweet citrus finish.',
     category: 'scotch',
     price: 55000.00,
     cost: 40000.00
 };
+
+export default [
+    jameson,
+    lagavulin,
+    rittenHouse,
+    angelsEnvy,
+    balvenie,
+];
