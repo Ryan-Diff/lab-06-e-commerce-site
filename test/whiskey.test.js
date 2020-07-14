@@ -1,14 +1,13 @@
-import renderWhisky from '../products/render-whisky.js';
+import { renderWhiskey } from '../render-whiskey.js';
 
 const test = QUnit.test;
 
-QUnit.module('Render Whisky');
 
-test('renders whisky', assert => {
+test('renders whiskey', (expect) => {
     // arrange
-    const Jameson = {
-        id: 'whisky',
-        name: 'Jameson',
+    const jameson = {
+        id: 'jameson',
+        name: 'Jameson Whiskey',
         image: 'apple.png',
         description: 'Smooth with hints of vanilla',
         category: 'Irish',
@@ -18,9 +17,9 @@ test('renders whisky', assert => {
     const expected = '<li class="Irish" title="Smooth with hints of vanilla"><h3>Jameson</h3><img src="../assets/apple.png" alt="Red Apple image"><p class="price">$18.00<button value="apple">Add</button></p></li>';
     
     // act
-    const dom = renderWhisky(whisky);
-    const html = dom.outerHTML;
+    const dom = renderWhiskey(jameson);
+    const actual = dom.outerHTML;
     
     // assert
-    assert.equal(html, expected);
+    expect.equal(actual, expected);
 });
