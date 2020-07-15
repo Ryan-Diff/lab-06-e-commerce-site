@@ -14,7 +14,7 @@ test('renders whiskey', (expect) => {
         price: 18.00,
         cost: 12.00
     };
-    const expected = '<li class="Irish" title="Smooth with hints of vanilla"><h3>Jameson</h3><img src="../assets/apple.png" alt="Red Apple image"><p class="price">$18.00<button value="apple">Add</button></p></li>';
+    const expected = '<li class="Irish" title="Smooth with hints of vanilla"><h3>Jameson</h3><img src="../assets/Jameson.jpg"><p class="price">$18.00<button value="apple">Add</button></p></li>';
     
     // act
     const dom = renderWhiskey(jameson);
