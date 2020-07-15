@@ -1,3 +1,5 @@
+import { findById, getCart } from './utils.js';
+
 export function renderWhiskey(whiskey) {
     const li = document.createElement('li');
     li.className = whiskey.category;
@@ -25,6 +27,23 @@ export function renderWhiskey(whiskey) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = whiskey.code;
+    button.addEventListener('click', () => {
+        const cart = getCart();
+        const whiskeyInCart = findById(cart, whiskey.id);
+        if (whiskeyInCart) {
+            whiskeyInCart.quantity++;
+
+        } else {
+            const newCart = {
+                id: whiskey.id,
+                quantity: 1
+            };
+            cart.push(newCart);
+        }
+        const stringyCart = JSON.stringify(cart);
+        localStorage.setItem('CART', stringyCart);
+    });
+
     p.appendChild(button);
 
     li.appendChild(p);

@@ -1,7 +1,7 @@
 const jameson = {
     id: 'jameson',
     name: 'Jameson Whiskey',
-    image: 'Jameson.jpg',
+    image: '../../assets/Jameson.jpg',
     description: 'Smooth with hints of vanilla.',
     category: 'Irish',
     price: 18.00,
@@ -10,7 +10,7 @@ const jameson = {
 const lagavulin = {
     id: 'lagavulin',
     name: 'Lagavulin Scotch Whiskey',
-    image: 'lagavulin-16-year-old-whisky.jpg',
+    image: '../../assets/lagavulin-16-year-old-whisky.jpg',
     description: 'Thick and rich. Malty with a fruity sweetness. Long smokey and spicy finish.',
     category: 'Scotch',
     price:80.00,
@@ -19,7 +19,7 @@ const lagavulin = {
 const rittenHouse = {
     id: 'rittenhouse',
     name: 'Rittenhouse Rye Whiskey',
-    image: 'rittenhouse.jpg',
+    image: '../../assets/rittenhouse.jpg',
     description: 'Sweet start with a transition to dark and roasty flavors. Oak and honey finish.',
     category: 'Rye',
     price: 35.00,
@@ -28,7 +28,7 @@ const rittenHouse = {
 const angelsEnvy = {
     id: 'angels',
     name: 'Angels Envy Bourbon',
-    image: 'AngelsEnvy.jpg',
+    image: '../../assets/AngelsEnvy.jpg',
     description: 'Undertones of smoke. Vanilla, Maple Syrup, Toasted Nuts and tangerine',
     category: 'bourbon',
     price: 100.00,
@@ -37,7 +37,7 @@ const angelsEnvy = {
 const balvenie = {
     id: 'balvenie',
     name: 'Balvenie 50',
-    image: 'Balvenie.jpg',
+    image: '../../assets/Balvenie.jpg',
     description: 'Citrus and oak on the nose. Warm spice and honey. Sweet citrus finish.',
     category: 'scotch',
     price: 55000.00,
