@@ -16,12 +16,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: teal;
-    color: white; 
+    background: darkgoldenrod;
+    color: black; 
     font-size: 25px;
 }
 
 img {
     height: 250px;
     width: 150px;
+}
+ol, ul {
+	list-style: none;
 }

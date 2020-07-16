@@ -1,0 +1,78 @@
+
+
+
+#orderButton {
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.25em;
+    background: burlywood;
+    color: white;
+}
+
+#orderButton:disabled {
+    opacity: 0.5;
+}
+
+table {
+   display: flex;
+  flex-direction: column;
+ flex-wrap: wrap;
+}
+
+thead {
+    background: orangered;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+table th, table td {
+    text-align: right;
+    padding: 10px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+tbody {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+tbody td {
+    font-size: 0.9rem;
+}
+
+
+tfoot {
+    background: #999;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background-color: forestgreen;
+    text-align: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkgoldenrod;
+    color: black; 
+    font-size: 25px;
+}
