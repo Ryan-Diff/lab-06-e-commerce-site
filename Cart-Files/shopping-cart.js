@@ -21,3 +21,10 @@ for (let i = 0; i < cart.length; i++) {
 
 const orderTotal = calcOrderTotal(cart, whiskey);
 orderTotalCell.textContent = toUSD(orderTotal);
+
+export function clearCart(cart){
+    //on click clear local storage of cart
+    localStorage.clear('cart');
+    alert('You placed your order of' + JSON.stringify(cart));
+    window.location = '../';
+}

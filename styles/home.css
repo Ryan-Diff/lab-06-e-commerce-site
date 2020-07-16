@@ -1,1 +1,27 @@
 /* add home page styles here */
+* {
+    box-sizing: border-box;
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    background-color: forestgreen;
+    text-align: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: teal;
+    color: white; 
+    font-size: 25px;
+}
+
+img {
+    height: 250px;
+    width: 150px;
+}

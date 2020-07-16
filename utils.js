@@ -47,3 +47,10 @@ export function calcOrderTotal(cart, fruits) {
 
     return roundCurrency(orderTotal);
 }
+
+export function clearCart(cart){
+  
+    localStorage.clear('cart');
+    alert('You placed your order of' + JSON.stringify(cart));
+    window.location = '../';
+}
