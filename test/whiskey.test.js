@@ -41,4 +41,4 @@ test('Calc line total', (assert) => {
     const expected = 90.00;
     const total = calcLineTotal(quantity, price);
     assert.equal(total, expected);
-})
+});
