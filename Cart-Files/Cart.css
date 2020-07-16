@@ -63,8 +63,13 @@ tfoot {
 
 body{
     margin: 0;
-    background-color: forestgreen;
+    background-color: var(--tea-green);
     text-align: center;
+    --orange-yellow-crayola: hsla(42, 85%, 68%, 1);
+    --mindaro: hsla(69, 100%, 76%, 1);
+    --medium-champagne: hsla(52, 100%, 85%, 1);
+    --tea-green: hsla(102, 90%, 88%, 1);
+    --black-coffee: hsla(17, 15%, 18%, 1);
     
 }
 
@@ -72,7 +77,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: darkgoldenrod;
-    color: black; 
+    background: var(--black-coffee) ;
+    color: var(--orange-yellow-crayola); 
     font-size: 25px;
 }
