@@ -1,4 +1,4 @@
-import { findById, getCart } from './utils.js';
+import { findById } from './utils.js';
 
 export function renderWhiskey(whiskey) {
     const li = document.createElement('li');
@@ -25,11 +25,14 @@ export function renderWhiskey(whiskey) {
     p.textContent = usd;
     
     const button = document.createElement('button');
+    // console.log('button');
     button.textContent = 'Add';
-    button.value = whiskey.code;
+    button.value = whiskey.id;
     button.addEventListener('click', () => {
-        const cart = getCart();
-        const whiskeyInCart = findById(cart, whiskey.id);
+        const emptyCart = '[]';
+        const localCart = localStorage.getItem('CART') || emptyCart;
+        const cart = JSON.parse(localCart);
+        let whiskeyInCart = findById(cart, whiskey.id);
         if (whiskeyInCart) {
             whiskeyInCart.quantity++;
 
@@ -42,6 +45,7 @@ export function renderWhiskey(whiskey) {
         }
         const stringyCart = JSON.stringify(cart);
         localStorage.setItem('CART', stringyCart);
+        alert('You Added one ' + whiskey.name + ' to your cart');
     });
 
     p.appendChild(button);

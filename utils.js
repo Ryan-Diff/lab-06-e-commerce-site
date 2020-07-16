@@ -1,3 +1,5 @@
+// import whiskey from "./Products/whiskey";
+
 export function findById(items, id) {
     // loop the array
     for (let i = 0; i < items.length; i++) {
@@ -44,12 +46,30 @@ export function calcOrderTotal(cart, fruits) {
         const lineTotal = calcLineTotal(lineItem.quantity, fruit.price);
         orderTotal += lineTotal;
     }
-
+    
     return roundCurrency(orderTotal);
 }
 
+
+
+export function addToCart(findById, whiskey){
+    const cart = getCart();
+    let whiskeyInCart = findById(cart, whiskey.id);
+    if (!whiskeyInCart){
+        cart.push({
+            id: whiskey.id,
+            quantity: 1
+        });
+    } else {
+        whiskeyInCart.quantity++;
+    }
+    const newCart = JSON.stringify(cart);
+    localStorage.setItem('cart', newCart);
+    alert('You Added one ' + whiskey.name + 'to your cart');
+}
+
 export function clearCart(cart){
-  
+                                                              
     localStorage.clear('cart');
     alert('You placed your order of' + JSON.stringify(cart));
     window.location = '../';
