@@ -14,10 +14,10 @@ body{
 --tea-green: hsla(102, 90%, 88%, 1);
 --black-coffee: hsla(17, 15%, 18%, 1);
 
-    margin: 0;
-    background-color: var(--tea-green);
-    text-align: center;
-    
+margin: 0;
+background-color: var(--tea-green);
+text-align: center;
+
     
 }
 
@@ -38,7 +38,16 @@ footer {
 img {
     height: 250px;
     width: 150px;
+    
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+nav {
+    padding: 10px, 10px, 10px, 10px;
+    margin: 10px, 10px, 10px, 10px;
+}
+
