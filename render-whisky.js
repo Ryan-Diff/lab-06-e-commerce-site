@@ -14,6 +14,10 @@ export function renderWhiskey(whiskey) {
     img.alt = whiskey.name + ' image';
     li.appendChild(img);
 
+    const description = document.createElement('p');
+    description.textContent = whiskey.description;
+    li.append(description);
+
     const p = document.createElement('p');
     p.className = 'price';
 
@@ -23,6 +27,7 @@ export function renderWhiskey(whiskey) {
     //     currency: 'USD' 
     // });
     p.textContent = usd;
+    li.appendChild(p);
     
     const button = document.createElement('button');
     // console.log('button');
@@ -48,9 +53,8 @@ export function renderWhiskey(whiskey) {
         alert('You Added one ' + whiskey.name + ' to your cart');
     });
 
-    p.appendChild(button);
+    li.append(button);
 
-    li.appendChild(p);
 
     return li;
 }

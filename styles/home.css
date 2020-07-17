@@ -40,14 +40,24 @@ img {
     width: 150px;
     
 }
-ol, ul {
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-nav {
-    padding: 10px, 10px, 10px, 10px;
-    margin: 10px, 10px, 10px, 10px;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
 }
 
+li {
+    border: solid black;
+    padding-bottom: 20px;
+    background-color: var(--medium-champagne);
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
