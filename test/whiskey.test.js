@@ -1,4 +1,4 @@
-import { renderWhiskey } from '../render-whisky.js';
+//  
 import { calcOrderTotal, calcLineTotal } from '../utils.js';
 import whiskey from '../Products/whiskey.js';
 import cart from '../Cart-Files/cart.js';
