@@ -22,10 +22,7 @@ export function renderWhiskey(whiskey) {
     p.className = 'price';
 
     const usd = '$' + whiskey.price.toFixed(2);
-    // const usd = fruit.price.toLocaleString('en-US', { 
-    //     style: 'currency', 
-    //     currency: 'USD' 
-    // });
+    
     p.textContent = usd;
     li.appendChild(p);
     
